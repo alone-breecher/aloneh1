@@ -11,6 +11,9 @@
             padding: 0;
             background-color: #1d1f27;
             color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -27,8 +30,11 @@
 
         nav {
             display: flex;
-            justify-content: center;
-            margin: 20px 0;
+            justify-content: flex-end;
+            margin: 20px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
 
         nav a {
@@ -69,12 +75,32 @@
             background-color: #14161a;
             color: #6c757d;
         }
+
+        .intro {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Cybersecurity Portfolio</h1>
     </header>
+
+    <div class="intro">
+        <h2>Welcome to My Cybersecurity Portfolio</h2>
+        <p>Hello! I am [Your Name], a cybersecurity professional specializing in various areas of security. Explore my write-ups and posts to learn more about my work and insights in the field.</p>
+        <p>Contact me: [Your Contact Info]</p>
+    </div>
 
     <nav>
         <a href="#" id="writups-tab" class="active">Write-ups</a>
@@ -84,7 +110,11 @@
     <div id="writups-content" class="content active">
         <h2>Write-ups</h2>
         <p>Welcome to my cybersecurity write-ups. Here you will find detailed analyses and reports of various security topics and case studies.</p>
-        <!-- Add content like links to your write-ups or embedded PDFs -->
+        <ul>
+            <li><a href="writups/post1.html">Post 1</a></li>
+            <li><a href="writups/post2.html">Post 2</a></li>
+            <!-- Add links to other write-up pages -->
+        </ul>
     </div>
 
     <div id="posts-content" class="content">
@@ -121,3 +151,4 @@
     </script>
 </body>
 </html>
+
